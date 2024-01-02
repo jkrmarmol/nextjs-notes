@@ -62,7 +62,7 @@ export default function ItemNotes({ id, notes, createdAt, updatedAt }: {
       <div className=" flex justify-between ">
         <div className="">
           <p className="text-[0.8rem] font-medium max-lg:text-sm" style={poppins.style}>{id}</p>
-          <p className="text-xs text-gray-400 font-medium" style={poppins.style}>{moment(createdAt).calendar()}</p>
+          <p className="text-xs text-gray-400 font-medium" style={poppins.style}>{moment(createdAt).startOf('minute').fromNow()}</p>
         </div>
 
         <ReactPopover
