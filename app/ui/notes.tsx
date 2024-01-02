@@ -60,7 +60,7 @@ export default function Notes() {
 
         <div
           onClick={onClickNew}
-          className="bg-blue-500 cursor-pointer h-10 px-6 flex items-center rounded-lg grow hover:bg-blue-600 active:bg-blue-700 max-lg:w-full max-sm:-mt-8"
+          className="bg-blue-500 my-2 cursor-pointer h-10 px-6 flex items-center rounded-lg grow hover:bg-blue-600 active:bg-blue-700 max-lg:w-full max-sm:-mt-8"
         >
           <div className='flex items-center justify-between w-full text-sm font-mono text-white'>
             New
