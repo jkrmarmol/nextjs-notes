@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { useRouter } from "next/router";
 
 
 export const createNotes = createAsyncThunk(
@@ -29,7 +28,6 @@ export const readNotes = createAsyncThunk(
   'notes/read',
   async () => {
     try {
-      const router = useRouter();
       const data = await fetch('/api')
       if (data.ok) {
         const jsonData = await data.json();
