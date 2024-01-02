@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import Swal from 'sweetalert2'
 import { useAppDispatch, useAppSelector } from '@/app/store/hooks'
-import { createNotes, readNotes, searchNotes } from '@/app/store/features/noteSlices'
+import { createNotes, readNotes, searchNotes } from '@/app/store/features/note-slices'
 import ItemNotes from '@/app/ui/item-notes'
 import { useDebouncedCallback } from 'use-debounce'
 

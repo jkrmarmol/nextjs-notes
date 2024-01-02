@@ -4,7 +4,7 @@ import moment from 'moment';
 import ReactPopover from '@/app/ui/react-popover';
 import Swal from 'sweetalert2';
 import { useAppDispatch } from '@/app/store/hooks';
-import { updateNotes, deleteNotes } from '@/app/store/features/noteSlices';
+import { updateNotes, deleteNotes } from '@/app/store/features/note-slices';
 
 
 const poppins = Poppins({
