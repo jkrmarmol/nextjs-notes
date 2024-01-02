@@ -75,12 +75,12 @@ export default function Notes() {
       <div className="border-black h-[75%]">
         <ul className=" h-full overflow-y-auto">
 
-          {selectSearchNotes.status === 'ok' ? selectSearchNotes.response.map((data, index) => (
+          {selectSearchNotes.status === 'ok' ? selectSearchNotes.response?.map((data, index) => (
             <ItemNotes
               key={index}
               {...data}
             />
-          )) : selectReadNotes.status === 'ok' ? selectReadNotes.response.map((data, index) => (
+          )) : selectReadNotes.status === 'ok' ? selectReadNotes.response?.map((data, index) => (
             <ItemNotes
               key={index}
               {...data}
